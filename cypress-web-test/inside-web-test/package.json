@@ -1,0 +1,12 @@
+{
+  "name": "inside-web-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:run": "./node_modules/.bin/cypress run",
+    "cypress:open": "./node_modules/.bin/cypress open"
+  },
+  "author": "",
+  "license": "ISC"
+}
