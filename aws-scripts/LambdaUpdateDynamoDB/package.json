@@ -1,0 +1,16 @@
+{
+  "name": "lambdaupdatedynamodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.224.1",
+    "log4js": "^2.5.3",
+    "request": "^2.85.0"
+  }
+}

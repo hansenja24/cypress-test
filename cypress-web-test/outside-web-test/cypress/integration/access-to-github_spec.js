@@ -11,10 +11,10 @@ describe('Access to multiple repositories in Hansenja24 Github', function () {
   //These are the tests for checking the property or details of Hansenja24 repositories
   it('Get The hansenja24 Repositories Details', function () {
     //.first means first child of the class
-    cy.get('a.jZphMl').first().should('contain', 'mern_stack_tutorial_todo_app')
+    cy.get('a.jZphMl').first().should('contain', 'cypress-test')
     //eq(1) and eq(4) mean the second child and fifth child of the class
-    cy.get('a.sc-htpNat').eq(1).should('contain', 'AWS-Tool')
-    cy.get('a.sc-htpNat').eq(4).should('have.attr', 'href').and('include', 'https://github.com/hansenja24/FeedMeProject')
+    cy.get('a.sc-htpNat').eq(2).should('contain', 'AWS-Tool')
+    cy.get('a.sc-htpNat').eq(5).should('have.attr', 'href').and('include', 'https://github.com/hansenja24/FeedMeProject')
   })
 
   //These are the tests for general result from the github seached
@@ -23,7 +23,7 @@ describe('Access to multiple repositories in Hansenja24 Github', function () {
       expect($class).to.be.not.empty;
       //The classes has 30 childs or elements
       expect($class).to.have.length(30);
-      expect($class.eq(2)).to.contain('lambda-tester');
+      expect($class.eq(3)).to.contain('lambda-tester');
     })
 
   })
